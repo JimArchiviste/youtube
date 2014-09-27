@@ -1,1 +1,1 @@
-echo $1
+for line in $(cat $1); do youtube-dl "$line" ; done
