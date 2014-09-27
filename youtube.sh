@@ -8,6 +8,6 @@ do
 	if [ -n "${array[1]}" ]; then
 		youtube-dl ${array[0]} -o "${array[1]}.mp4";
 	else
-		youtube-dl $array[0] -o '%(title)s';
+		youtube-dl $array[0] -o "%(title)s.mp4";
 	fi
 done
